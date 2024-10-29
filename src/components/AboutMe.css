@@ -1,0 +1,110 @@
+.about-me-container {
+    display: flex;
+    flex-direction: row; /* Arrange items horizontally */
+    align-items: flex-start; /* Align items at the top */
+    margin: 5vh; /* Add some margin to the container */
+}
+
+.credentials-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh;
+    padding-left: 7vh;
+    padding-right:7vh;
+    background-color: #121212;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10vh;
+    /* background: url('../assets/back.jpg') no-repeat center center fixed;
+    background-size: cover; */
+  }
+
+.about-me-photo {
+    width: 30%;
+    max-width: 300px; /* Adjust the width of the photo as needed */
+    margin-right: 3vh; /* Add some space between the photo and the text */
+    border-radius: 8px; /* Optional: Add rounded corners to the photo */
+}
+  
+  .left-column {
+    flex: 1;
+    margin-right: 2vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .left-column p {
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 2; /* Increase line height for improved readability */
+  }
+  
+  .right-column {
+    flex: 2;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+  }
+  
+  .right-column p {
+    margin-bottom: 1.5vh;
+    font-size: 1.1rem;
+    line-height: 2; /* Increase line height for improved readability */
+  }
+  
+  .download-resume-button {
+    padding: 20px 30px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    border-radius: 10px;
+    margin-top: 2vh;
+    font-size: 0.9rem;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    line-height: 4rem;
+  }
+  
+  .download-resume-button:hover {
+    background-color: #212121;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    margin-right: 15px;
+  }
+
+  .icon {
+    width: 5vh;
+    height: 5vh;
+    transition: 0.5s;
+  }
+
+  .icon:hover {
+    width: 6vh; /* Increase width */
+    height: 6vh; /* Increase height */
+  }
+  
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(50px); /* Start 50px below the final position */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Move to the original position */
+    }
+}
+  
+.fade-in {
+opacity: 0; /* Start invisible */
+}
+
+.fade-in-visible {
+animation: appear 1s ease-out forwards; /* Apply the 'appear' animation when the element is in view */
+}
+  

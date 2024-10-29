@@ -1,0 +1,87 @@
+
+.background-container {
+    position: relative; /* Container is relative, making it a reference for absolute positioning */
+    width: 100%; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+    height: 100vh;
+  }
+  
+  .background1, .background2, .background3 {
+    position: absolute; /* Stack all images within the container */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure the images fill the container */
+    height: 100%;
+  }
+  
+  .background1 {
+    z-index: 1; /* Background 1 will be at the back */
+  }
+  
+  .background2 {
+    z-index: 2; /* Background 2 will be above Background 1 */
+  }
+  
+  .background3 {
+    z-index: 4; /* Background 3 will be on top of Background 2 and 1 */
+  }
+
+
+.overlay {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 20px;
+    color: white;
+}
+
+.name {
+    position: absolute;
+    z-index: 2; /* Between background1 and background2 */
+    top: 35%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%); /* Adjust to perfectly center */
+    font-size: 5rem;
+    color: white; /* Adjust text color for visibility */
+    font-family: Marker Felt;
+    font-weight: 800;
+    -webkit-text-stroke: 2px #000000;
+}
+  
+.description {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+  
+.discoverMoreButton {
+    position: absolute;
+    z-index: 5;
+    padding: 15px 30px;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-family: Marker Felt;
+    font-weight: 800;
+    top: 10%;
+    left: 10%;
+    transition: 0.5s;
+    border-radius: 50px; /* Rounded corners to start the cloud shape */
+    background-color: transparent; /* No solid background color */
+    background-image: url('../assets/cloud.png'); /* Replace with your PNG path */
+    background-size: cover; /* Make the image cover the button */
+    background-repeat: no-repeat;
+    background-position: center; /* Center the background image */
+    width: 15%; /* Increase width */
+    height: 15%; /* Increase height */
+}
+
+.discoverMoreButton:hover {
+    width: 16%; /* Increase width */
+    height: 16%; /* Increase height */
+}
+  

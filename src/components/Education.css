@@ -1,0 +1,87 @@
+.education {
+    margin: 7vh;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+.education-heading {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+  
+.timeline {
+    position: relative;
+    margin-left: 5vh;
+    padding-left: 20px;
+    border-left: 2px solid #424242;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -33px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #121212;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
+
+.timeline-content {
+    background-color: #000000;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    font-weight: lighter;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.timeline-content em {
+    color: #999;
+}
+
+@media (max-width: 768px) {
+    .timeline {
+    margin-left: 20px;
+    padding-left: 10px;
+    }
+
+    .timeline-content {
+    width: calc(100% - 20px);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(50px); /* Start 50px below the final position */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Move to the original position */
+    }
+}
+  
+.fade-in {
+opacity: 0; /* Start invisible */
+}
+
+.fade-in-visible {
+animation: appear 1s ease-out forwards; /* Apply the 'appear' animation when the element is in view */
+}
