@@ -1,17 +1,18 @@
 
 .background-container {
-    position: relative; /* Container is relative, making it a reference for absolute positioning */
-    width: 100%; /* Adjust width as needed */
-    height: 100%; /* Adjust height as needed */
+    position: relative;
+    width: 100%;
     height: 100vh;
+    /* overflow: hidden; */
   }
   
   .background1, .background2, .background3 {
     position: absolute; /* Stack all images within the container */
     top: 0;
     left: 0;
-    width: 100%; /* Ensure the images fill the container */
-    height: 100%;
+    width: 100%; /* Make sure the width is the full viewport */
+    height: 100vh; /* Make sure the height is the full viewport */
+    object-fit: cover;
   }
   
   .background1 {
@@ -76,8 +77,11 @@
     background-size: cover; /* Make the image cover the button */
     background-repeat: no-repeat;
     background-position: center; /* Center the background image */
-    width: 15%; /* Increase width */
-    height: 15%; /* Increase height */
+    width: 15vw;
+    height: 15vh;
+    min-height: 100px;
+    min-width: 200px;
+    max-height: 120px;
 }
 
 .discoverMoreButton:hover {
