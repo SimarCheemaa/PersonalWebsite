@@ -85,4 +85,12 @@
     width: 235px; /* Increase width */
     height: 125px; /* Increase height */
 }
+
+/* Responsive Styles for Mobile Screens */
+@media (max-width: 1024px) {
+  .name {
+    top: 30%; /* Center vertically */
+    font-size: 4rem;
+  }
+}
   

@@ -6,9 +6,10 @@
   }
   
   .projects-heading {
+    margin-left: 7vh;
     font-size: 4rem;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   
   .projects-container {
@@ -16,6 +17,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 3vh;
+    margin-bottom: 30px;
   }
   
   .project-card {
@@ -48,4 +50,31 @@
     border-radius: 8px;
     font-size: 1.2rem;
   }
+
+/* Responsive Styles for Mobile Screens */
+@media (max-width: 1024px) {
+
+  .projects {
+    margin: 0px;
+    margin-left: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .projects-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2vh;
+    margin-right: 20px;
+  }
+}
   

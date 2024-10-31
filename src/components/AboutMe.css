@@ -87,6 +87,42 @@
     width: 6vh; /* Increase width */
     height: 6vh; /* Increase height */
   }
+
+/* Responsive Styles for Mobile Screens */
+@media (max-width: 1024px) {
+  .about-me-container {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center align items for a clean layout */
+  }
+
+  .about-me-photo {
+      width: 80vw; /* Make the photo larger when stacking */
+      /* max-width: 300px; Limit the max width for smaller screens */
+      margin-bottom: 3vh; /* Add some margin below the photo */
+  }
+
+  .credentials-container {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center align items for a clean layout */
+      padding: 4vh;
+      width: 90%; /* Reduce the width on smaller screens for better fit */
+      padding-left: 5vh;
+      padding-right: 5vh;
+  }
+
+  .left-column, .right-column {
+      width: 100%;
+      margin-right: 0; /* Remove the margin on the right to center the content */
+  }
+
+  .right-column {
+      text-align: center; /* Center the text for better readability */
+  }
+
+  .download-resume-button {
+      margin-top: 5vh; /* Add more spacing at the top for the button */
+  }
+}
   
 
 @keyframes appear {

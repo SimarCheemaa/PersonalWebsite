@@ -1,6 +1,8 @@
 .contact-section {
     padding-bottom: 40px;
     padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: #121212; /* Dark background to match your overall style */
     color: #ffffff; /* White text */
     text-align: center;

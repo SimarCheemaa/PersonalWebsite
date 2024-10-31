@@ -37,17 +37,6 @@ li::marker {
     font-size: 1.5rem; /* Larger bullet points for emphasis */
 }
 
-@media (max-width: 768px) {
-    .timeline {
-    margin-left: 20px;
-    padding-left: 10px;
-    }
-
-    .timeline-content {
-    width: calc(100% - 20px);
-    }
-}
-
 @keyframes appear {
     from {
         opacity: 0;
@@ -66,3 +55,57 @@ opacity: 0; /* Start invisible */
 .fade-in-visible {
 animation: appear 1s ease-out forwards; /* Apply the 'appear' animation when the element is in view */
 }
+
+/* Responsive Styles for Mobile Screens */
+@media (max-width: 1024px) {
+    .experience {
+        margin: 0px;
+        margin-left: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .experience-heading {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .role {
+        font-size: 1rem;
+        font-style: italic;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        color: #b4b4b4;
+    }
+    
+    ul {
+        list-style-type: disc;
+        margin: 0;
+        margin-top: 20px;
+        padding-left: 0px;
+        font-size: 1rem;
+        line-height: 1.2;
+        color: #f5f5f5;
+    }
+    
+    li {
+        margin-bottom: 10px; /* Spacing between bullet points */
+        padding-left: 0px; /* Extra padding to match the design */
+    }
+    
+    li::marker {
+        color: #ffffff; /* Green bullet points */
+        font-size: 1.5rem; /* Larger bullet points for emphasis */
+    }
+
+    .timeline {
+        margin-left: 0px;
+        padding-left: 20px;
+    }
+    
+    .timeline-content {
+        width: calc(100% - 20px);
+        padding: 0px;
+        padding-left: 10px;
+    }
+  }

@@ -32,9 +32,8 @@ function AboutMe() {
       <div className="right-column">
         <p>I am a student at the University of California, Irvine, pursuing a Bachelor of Science in Computer Science with a GPA of 3.91. I have worked as a software engineering intern at Major League Baseball, where I led automation projects that significantly reduced manual testing time and improved code maintainability. I’m proficient in both Python and JavaScript, which are my favorite programming languages. </p>
         <p>Outside of tech, I enjoy lifting and staying active. I'm also involved in extracurricular activities, including serving as an undergraduate lab tutor where I helped students master fundamental programming concepts. In my free time, I enjoy exploring new technologies and staying fit!</p>
-
         <a
-          href={require("../assets/Simar_Cheema.pdf")} // Update the path to your resume file
+          href={require("../assets/Simar_Cheema.pdf")}
           download="Simar_Cheema_Resume.pdf"
           className="download-resume-button"
         >
