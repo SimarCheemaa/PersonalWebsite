@@ -15,7 +15,7 @@ const Hero = () => {
       if (scrollPosition < threshold) {
         // Apply different scroll speeds for each background before the threshold
         background1.style.transform = `translateY(${scrollPosition * 0.1}px)`; // Slowest
-        background2.style.transform = `translateY(${scrollPosition * 0.3}px)`; // Medium speed
+        background2.style.transform = `translateY(${scrollPosition * 0.45}px)`; // Medium speed
         background3.style.transform = `translateY(${scrollPosition * 0.5}px)`; // Fastest
         name.style.transform = `translate(-50%, ${scrollPosition * 0.6}px)`;
       } else {

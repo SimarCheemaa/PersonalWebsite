@@ -77,15 +77,12 @@
     background-size: cover; /* Make the image cover the button */
     background-repeat: no-repeat;
     background-position: center; /* Center the background image */
-    width: 15vw;
-    height: 15vh;
-    min-height: 100px;
-    min-width: 200px;
-    max-height: 120px;
+    width: 225px;
+    height: 120px;
 }
 
 .discoverMoreButton:hover {
-    width: 16%; /* Increase width */
-    height: 16%; /* Increase height */
+    width: 235px; /* Increase width */
+    height: 125px; /* Increase height */
 }
   
