@@ -17,8 +17,6 @@ function AboutMe() {
           <p><strong>NAME:</strong> Simar Cheema</p>
           <p><strong>PRONOUNS:</strong> He/Him/His</p>
           <p><strong>SCHOOL:</strong> University of California, Irvine</p>
-          <p><strong>AGE:</strong> 22 Years</p>
-          <p><strong>HOMETOWN:</strong> Mountain House, CA</p>
 
           <div className="social-icons">
             <a href="https://www.linkedin.com/in/simarcheema/" target="_blank" rel="noreferrer">
