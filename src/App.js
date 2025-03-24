@@ -5,6 +5,7 @@ import Contact from './components/Contact';
 import AboutMe from './components/AboutMe';
 import Education from './components/Education';
 import Experience from './components/Experience';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <div className="contact">
         <Contact />
       </div>
+      <Analytics />
     </div>
   );
 }
